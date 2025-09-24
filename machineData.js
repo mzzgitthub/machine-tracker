@@ -488,7 +488,7 @@ const machineData = {
           ]
         }
       ],
-      "Cylinder Not Moving R IGHT/LEFT (DGSL-12-50-Y3A)": [
+      "Cylinder Not Moving RIGHT/LEFT (DGSL-12-50-Y3A)": [
         {
           "verification": [
             "1) Check the inductive sensor",
