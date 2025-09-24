@@ -1,7 +1,7 @@
 const machineData = {
   "VENUS 6": {
     "P10": {
-      "Plallate Not Moving": [
+      "Pallate Not Moving": [
         {
           "verification": [
             "Inspected Start Pallet Button and Kick mechanism",
@@ -33,7 +33,7 @@ const machineData = {
       ]
     },
     "P20": {
-      "Plallate Not Moving": [
+      "Pallate Not Moving": [
         {
           "verification": [
             "Inspected Start Pallet Button and Kick mechanism",
@@ -65,7 +65,7 @@ const machineData = {
       ]
     },
     "P30": {
-      "Plallate Not Moving": [
+      "Pallate Not Moving": [
         {
           "verification": [
             "Inspected Start Pallet Button and Kick mechanism",
@@ -455,7 +455,7 @@ const machineData = {
           ]
         }
       ],
-      "Plallate Not Moving": [
+      "Pallate Not Moving": [
         {
           "verification": [
             "Inspected Start Pallet Button and Kick mechanism",
