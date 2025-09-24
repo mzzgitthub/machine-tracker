@@ -1,7 +1,7 @@
 const machineData = {
   "VENUS 6": {
     "P10": {
-      "PALLATE NOT MOVING": [
+      "Plallate Not Moving": [
         {
           "verification": [
             "Inspected Start Pallet Button and Kick mechanism",
@@ -20,7 +20,7 @@ const machineData = {
           ]
         }
       ],
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -33,7 +33,7 @@ const machineData = {
       ]
     },
     "P20": {
-      "PALLATE NOT MOVING": [
+      "Plallate Not Moving": [
         {
           "verification": [
             "Inspected Start Pallet Button and Kick mechanism",
@@ -52,7 +52,7 @@ const machineData = {
           ]
         }
       ],
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -65,7 +65,7 @@ const machineData = {
       ]
     },
     "P30": {
-      "PALLATE NOT MOVING": [
+      "Plallate Not Moving": [
         {
           "verification": [
             "Inspected Start Pallet Button and Kick mechanism",
@@ -84,7 +84,7 @@ const machineData = {
           ]
         }
       ],
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -97,7 +97,7 @@ const machineData = {
       ]
     },
     "P32.33": {
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -129,7 +129,7 @@ const machineData = {
           ]
         }
       ],
-      "Pallate not rotate": [
+      "Pallate Not Rotate": [
         {
           "verification": [
             "Check air supply pressure and line connections",
@@ -151,7 +151,7 @@ const machineData = {
       ]
     },
     "P40": {
-      "GRIPPER NOT GRIP CORRECTLY": [
+      "Gripper Not Grip Correctly": [
         {
           "verification": [
             "Check air supply",
@@ -169,7 +169,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER NOT MOVING UP/DOWN": [
+      "Cylinder Not Moving UP/DOWN": [
         {
           "verification": [
             "Check the inductive sensor",
@@ -185,7 +185,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER NOT NOT MOVING FORWARD/BACKWARD": [
+      "Cylinder Not Moving FORWARD/BACKWARD": [
         {
           "verification": [
             "Check air supply",
@@ -203,7 +203,7 @@ const machineData = {
           ]
         }
       ],
-      "UNIT HAS SOLDER BRIDGE/\nFLUX NOT SPRAYING CORRECTLY": [
+      "Unit Has Solder Bridge/;\nFlux Not Spraying Correctly": [
         {
           "verification": [
             "Check flux level in the tank or container",
@@ -236,7 +236,7 @@ const machineData = {
       ]
     },
     "P51": {
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -247,7 +247,7 @@ const machineData = {
           ]
         }
       ],
-      "Cylinder not moving UP/DOWN": [
+      "Cylinder Not Moving UP/DOWN": [
         {
           "verification": [
             "Check air supply pressure and line connections",
@@ -267,7 +267,7 @@ const machineData = {
           ]
         }
       ],
-      "Pallate not rotate": [
+      "Pallate Not Rotate": [
         {
           "verification": [
             "Check air supply pressure and line connections",
@@ -289,7 +289,7 @@ const machineData = {
       ]
     },
     "P52": {
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -301,7 +301,7 @@ const machineData = {
           ]
         }
       ],
-      "Cylinder not moving UP/DOWN": [
+      "Cylinder Not Moving UP/DOWN": [
         {
           "verification": [
             "Check air supply pressure and line connections",
@@ -360,7 +360,7 @@ const machineData = {
       ]
     },
     "P53": {
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -370,9 +370,28 @@ const machineData = {
             "Adjust or replace sensor if broken",
             "Remove debris or foreign objects and clean and inspect stopper mechanism"
           ]
+        },
+        {
+          "verification": [
+            "Check for any foreign objects, debris, or misaligned parts obstructing the gripper\u2019s movement.",
+            "Inspect the gripper jaws for wear, damage, or misalignment.",
+            "Ensure air pressure or hydraulic fluid is within operating range.",
+            "Look for leaks, loose fittings, or damaged hoses.",
+            "Confirm that limit switches or position sensors are functioning correctly.",
+            "Use diagnostics to verify that open/close signals are being received.",
+            "Manually move the gripper (if safe) to check for smooth operation.",
+            "Check for error codes or alarms in the control system."
+          ],
+          "solution": [
+            "Remove debris and apply appropriate lubricant to moving parts.",
+            "Realign gripper jaws or mounting brackets if they\u2019re off-center.",
+            "Swap out worn-out seals, hoses, or mechanical parts.",
+            "Reinitialize the gripper in the control system or recalibrate sensors.",
+            "Ensure valves controlling pneumatic flow are not stuck or faulty."
+          ]
         }
       ],
-      "Cylinder not moving UP/DOWN": [
+      "Cylinder Not Moving UP/DOWN": [
         {
           "verification": [
             "Check air supply pressure and line connections",
@@ -407,31 +426,10 @@ const machineData = {
             "For industrial or high-precision cameras, recalibration may be needed."
           ]
         }
-      ],
-      "Gripper Stuck": [
-        {
-          "verification": [
-            "Check for any foreign objects, debris, or misaligned parts obstructing the gripper\u2019s movement.",
-            "Inspect the gripper jaws for wear, damage, or misalignment.",
-            "Ensure air pressure or hydraulic fluid is within operating range.",
-            "Look for leaks, loose fittings, or damaged hoses.",
-            "Confirm that limit switches or position sensors are functioning correctly.",
-            "Use diagnostics to verify that open/close signals are being received.",
-            "Manually move the gripper (if safe) to check for smooth operation.",
-            "Check for error codes or alarms in the control system."
-          ],
-          "solution": [
-            "Remove debris and apply appropriate lubricant to moving parts.",
-            "Realign gripper jaws or mounting brackets if they\u2019re off-center.",
-            "Swap out worn-out seals, hoses, or mechanical parts.",
-            "Reinitialize the gripper in the control system or recalibrate sensors.",
-            "Ensure valves controlling pneumatic flow are not stuck or faulty."
-          ]
-        }
       ]
     },
     "P54": {
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -445,7 +443,7 @@ const machineData = {
       ]
     },
     "P60": {
-      "Pallate not stopping": [
+      "Pallate Not Stopping": [
         {
           "verification": [
             "Check sensor, see if it working or not",
@@ -457,7 +455,7 @@ const machineData = {
           ]
         }
       ],
-      "PALLATE NOT MOVING": [
+      "Plallate Not Moving": [
         {
           "verification": [
             "Inspected Start Pallet Button and Kick mechanism",
@@ -478,7 +476,7 @@ const machineData = {
       ]
     },
     "P71": {
-      "LASER NOT DETECT THE ITEM (M002088)(LB11-03)": [
+      "Laser Not Detect The Item (M002088)(LB11-03)": [
         {
           "verification": [
             "1) Check the connection on the laser",
@@ -490,7 +488,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER NOT MOVING RIGHT/LEFT (DGSL-12-50-Y3A)": [
+      "Cylinder Not Moving R IGHT/LEFT (DGSL-12-50-Y3A)": [
         {
           "verification": [
             "1) Check the inductive sensor",
@@ -504,7 +502,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER NOT MOVING UP/DOWN (HGDS-PP-12-PAB)": [
+      "Cylinder Not Moving UP/DOWN (HGDS-PP-12-PAB)": [
         {
           "verification": [
             "1) Check the inductive sensor",
@@ -518,7 +516,7 @@ const machineData = {
           ]
         }
       ],
-      "THE GRIPPER DOES NOT ROTATE": [
+      "The Gripper Does Not Rotate": [
         {
           "verification": [
             "1) Check the inductive sensor",
@@ -532,7 +530,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER NOT MOVING RIGHT/LEFT (DGSL-16-100-Y3A)": [
+      "Cylinder Not Moving RIGHT/LEFT (DGSL-16-100-Y3A)": [
         {
           "verification": [
             "1) Check the inductive sensor",
@@ -546,7 +544,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER NOT MOVING UP/DOWN (DGSL-12-50-Y3A)": [
+      "Cylinder Not Moving UP/DOWN (DGSL-12-50-Y3A)": [
         {
           "verification": [
             "1) Check the inductive sensor",
@@ -560,7 +558,7 @@ const machineData = {
           ]
         }
       ],
-      "LASER AT ROTATION PLATE NOT DETECT ITEM": [
+      "Laser At Rotation Plate Not Detect Item": [
         {
           "verification": [
             "1) Check the connection on the laser",
@@ -574,7 +572,7 @@ const machineData = {
       ]
     },
     "P72": {
-      "KNIFE BLUNT": [
+      "Knofe Blunt": [
         {
           "verification": [
             "Check the knife, see if it have cracked or dull."
@@ -584,7 +582,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER STUCK/JAMMED\n(M013574)(DGSL-16-50-Y3A 544001 P102)": [
+      "Cylinder Stuck/Jammed\n(M013574)(DGSL-16-50-Y3A 544001 P102)": [
         {
           "verification": [
             "1) Check if there are tin wire at the slider's rail.",
@@ -600,7 +598,7 @@ const machineData = {
           ]
         }
       ],
-      "SENSOR NOT TRIGGERED": [
+      "Sensore Not Triggered": [
         {
           "verification": [
             "1) Check the sensor to see if it damaged or not.",
@@ -612,7 +610,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER STUCK JAMMED\n(M011448) (DGSL-16-80-Y3A)": [
+      "Cylinder Stuck/Jammed\n(M011448) (DGSL-16-80-Y3A)": [
         {
           "verification": [
             "1) If need to replace the cylinder"
@@ -622,7 +620,7 @@ const machineData = {
           ]
         }
       ],
-      "LED DOES NOT LIGHT UP; NO SIGNAL TO PLC OR CONTROLLER": [
+      "Led Does Not T Light Up; No Signal To PLC Or Controller": [
         {
           "verification": [
             "Inspect cable for cuts/wear/damaged"
@@ -632,7 +630,7 @@ const machineData = {
           ]
         }
       ],
-      "SENSOR DOES NOT DETECT A POSITION; LED STAYS OFF+C10": [
+      "Sensor Does Not Detect  A Position; LED Stay OFF": [
         {
           "verification": [
             "Reposition sensor correctly"
@@ -642,7 +640,7 @@ const machineData = {
           ]
         }
       ],
-      "LED STAYS ON CONSTANTLY": [
+      "LED Stay ON Constantly": [
         {
           "verification": [
             "Check for overvoltage or incorrect wiring"
@@ -655,7 +653,7 @@ const machineData = {
           ]
         }
       ],
-      "THE BAR DOES NOT GOES UP/DOWN": [
+      "The Bar Does Not Move UP/DOWN": [
         {
           "verification": [
             "1) Make sure the bar position is near with the sensor.",
@@ -669,7 +667,7 @@ const machineData = {
       ]
     },
     "P73": {
-      "THE COMPONENT IS NOT MOVING FORWARD": [
+      "The Component Is Not Moving Forward": [
         {
           "verification": [
             "CHECK THE INDUCTIVE SENSOR WHETHER IT WORKING OR NOT",
@@ -689,7 +687,7 @@ const machineData = {
           ]
         }
       ],
-      "PROBLEM WITH BENDING (ANGLE)": [
+      "Problem With Bending (ANGLE)": [
         {
           "verification": [
             "CHECK CYLINDER (AND-32-5-1-PA) FOR DAMAGED",
@@ -707,7 +705,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER (ANN-40-50-A-P-A )NOT MOVING UP/DOWN": [
+      "Cylinder Not MOVING UP/DOWN (ANN-40-50-A-P-A )": [
         {
           "verification": [
             "CHECK THE CYLINDER FOR DAMAGED",
@@ -723,7 +721,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER NOT PRESSING THE PIN FIRMLY AGAINST THE COMPONENT": [
+      "Cylinder Not Pressing The Pin Firmly Against The Component": [
         {
           "verification": [
             "CHECK THE INDUCTIVE SENSOR",
@@ -742,7 +740,21 @@ const machineData = {
           ]
         }
       ],
-      "THE ROTATING PLATE NOT ROTATING": [
+      "Pin Not Insert Correctly": [
+        {
+          "verification": [
+            "Check the block clamping whether is press firmly or not",
+            "Check the surface of the block clamping",
+            "Check the movement of the clamping"
+          ],
+          "solution": [
+            "Check for the block clamping for loose screw and tighten it",
+            "Sand the block clamping if it  has rough surfaces",
+            "Apply grease if rhe movement is not smooth"
+          ]
+        }
+      ],
+      "The Rotating Plate Not Rotating": [
         {
           "verification": [
             "CHECK THE INDUCTIVE SENSOR",
@@ -763,7 +775,7 @@ const machineData = {
       ]
     },
     "P74": {
-      "CYLINDER NOT NOT MOVING FORWARD/BACKWARD": [
+      "Cylinder Not Moving FORWARD/BACKWARD": [
         {
           "verification": [
             "Check air supply",
@@ -781,7 +793,7 @@ const machineData = {
           ]
         }
       ],
-      "PLATFORM NOT MOVING UP/DOWN": [
+      "Platform Not Moving UP/DOWN": [
         {
           "verification": [
             "Check solenoid activation",
@@ -797,7 +809,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER (GP416NC-C) NOT CLAMP THE COMPONENT": [
+      "Cylinder Not Clamp The Component (GP416NC-C)": [
         {
           "verification": [
             "Check air supply",
@@ -815,7 +827,7 @@ const machineData = {
           ]
         }
       ],
-      "NOT CUTTING THE TIN WIRE": [
+      "Not Cutting The Wire": [
         {
           "verification": [
             "Check blade condition",
@@ -835,7 +847,7 @@ const machineData = {
       ]
     },
     "P75": {
-      "CYLINDER 1 (DGSL-16-100-Y3A))NOT MOVING LEFT/RIGHT": [
+      "Cylinder 1 Not Moving LEFT/RIGHT (DGSL-16-100-Y3A)": [
         {
           "verification": [
             "Check air supply",
@@ -854,7 +866,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER 2 (DGSL-12-50-Y3A) NOT MOVING UP/DOWN": [
+      "Cylinder 2  Not Moving UP/DOWN (DGSL-12-50-Y3A)": [
         {
           "verification": [
             "Check air supply",
@@ -873,25 +885,26 @@ const machineData = {
           ]
         }
       ],
-      "GRIPPER NOT GRIP THE COMPONENT": [
+      "Cylinder 3 Not Moving UP/DOWN": [
         {
           "verification": [
             "Check air supply",
             "Check solenoid activation",
-            "Check gripper alignment",
+            "Check sensors",
             "Check for mechanical blockage",
-            "Check gripper condition"
+            "Check cylinder condition"
           ],
           "solution": [
-            "Ensure pressure is reaching the gripper actuator",
-            "Confirm solenoid receives signal and actuates the gripper",
-            "Make sure the gripper is positioned correctly to contact the component",
-            "Ensure nothing is preventing the gripper fingers from closing",
-            "Inspect for wear, loose parts, or damaged gripping surfaces"
+            "Ensure pressure is reaching the cylinder and is within required range",
+            "Confirm solenoid receives signal and activates properly",
+            "Verify up/down sensors are working and sending correct signals",
+            "Make sure nothing is obstructing the cylinder movement",
+            "Inspect for internal damage, misalignment, or loose fittings.",
+            "Replace the cylinder if broken/damaged."
           ]
         }
       ],
-      "CYLINDER NOT ROTATE 180": [
+      "Cylinder Not Rotate 180": [
         {
           "verification": [
             "Check air pressure",
@@ -911,28 +924,27 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER 3 NOT MOVING UP/DOWN": [
+      "Gripper Not Function": [
         {
           "verification": [
             "Check air supply",
             "Check solenoid activation",
-            "Check sensors",
+            "Check gripper alignment",
             "Check for mechanical blockage",
-            "Check cylinder condition"
+            "Check gripper condition"
           ],
           "solution": [
-            "Ensure pressure is reaching the cylinder and is within required range",
-            "Confirm solenoid receives signal and activates properly",
-            "Verify up/down sensors are working and sending correct signals",
-            "Make sure nothing is obstructing the cylinder movement",
-            "Inspect for internal damage, misalignment, or loose fittings.",
-            "Replace the cylinder if broken/damaged."
+            "Ensure pressure is reaching the gripper actuator",
+            "Confirm solenoid receives signal and actuates the gripper",
+            "Make sure the gripper is positioned correctly to contact the component",
+            "Ensure nothing is preventing the gripper fingers from closing",
+            "Inspect for wear, loose parts, or damaged gripping surfaces"
           ]
         }
       ]
     },
     "P76": {
-      "THE MARKING IS FAR FROM CLEAN AND ACCEPTABLE": [
+      "The Marking Is Far From Clean And Acceptable": [
         {
           "verification": [
             "Check Print Head or Marking Tool"
@@ -944,7 +956,7 @@ const machineData = {
       ]
     },
     "P82": {
-      "CYLINDER (DGSL-12-20-PA) NOT MOVING UP/DOWN": [
+      "Cylinder Not MovingUP/DOWN (DGSL-12-20-PA)": [
         {
           "verification": [
             "Check solenoid activation",
@@ -960,7 +972,7 @@ const machineData = {
           ]
         }
       ],
-      "GRIPPER NOT FUNCTION": [
+      "Gripper Not Function": [
         {
           "verification": [
             "Check air supply",
@@ -980,7 +992,7 @@ const machineData = {
       ]
     },
     "P83": {
-      "CAMERA CANNOT DETECT OBJECT CLEARLY": [
+      "Camera Cannot Detect Object Clearly": [
         {
           "verification": [
             "Check Lens for Dirt or Smudges\nInspect Lighting Conditions\nInspect for Physical Damage"
@@ -990,7 +1002,7 @@ const machineData = {
           ]
         }
       ],
-      "CYLINDER (DGSL-12-20-PA) NOT MOVING UP/DOWN": [
+      "Cylinder Not Moving UP/DOWN (DGSL-12-20-PA)": [
         {
           "verification": [
             "Check solenoid activation",
@@ -1006,7 +1018,7 @@ const machineData = {
           ]
         }
       ],
-      "GRIPPER NOT FUNCTION": [
+      "Gripper Not Function": [
         {
           "verification": [
             "Check air supply",
