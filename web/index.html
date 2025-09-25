@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Machine Issue Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Machine Issue Tracker</h1>
+
+    <div class="form-group">
+      <label for="machineDropdown">Select Machine:</label>
+      <select id="machineDropdown"></select>
+    </div>
+
+    <div class="form-group">
+      <label for="partDropdown">Select Part:</label>
+      <select id="partDropdown"></select>
+    </div>
+
+    <div class="form-group">
+      <label for="issueDropdown">Select Issue:</label>
+      <select id="issueDropdown"></select>
+    </div>
+
+    <div class="card">
+      <h2>Verifications</h2>
+      <ul id="verificationList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Solutions</h2>
+      <ul id="solutionList"></ul>
+    </div>
+
+    <div id="topSelections">
+      <p id="topMachine">🔥 Top Machine: -</p>
+      <p id="topPart">🔥 Top Part: -</p>
+      <p id="topIssue">🔥 Top Issue: -</p>
+    </div>
+  </div>
+
+  <script src="../js/machineData.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
