@@ -3,7 +3,7 @@ name: Update Machine Data
 on:
   push:
     branches:
-      - main   # runs on every push to main
+      - main       # triggers on every push to main
   workflow_dispatch:  # allows manual trigger
 
 jobs:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repo
+      # 1️⃣ Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -31,11 +31,11 @@ jobs:
       - name: Run converter
         run: python src/converter.py
 
-      # 5️⃣ Commit & push machineData.js using PAT
+      # 5️⃣ Commit & push machineData.js automatically
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v4
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}   # your personal access token
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}   # your PAT secret
         with:
           commit_message: "Auto-update machineData.js"
           branch: main
