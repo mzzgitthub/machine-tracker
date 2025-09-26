@@ -39,4 +39,4 @@ jobs:
           branch: main
           file_pattern: js/machineData.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PATH }}
