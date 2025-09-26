@@ -1,18 +1,38 @@
-name:Test GitHub Action
+name: Update Machine Data
 
 on:
   push:
     branches:
-      -main
+      - main
+  workflow_dispatch:
 
 jobs:
-  build:
-    runs-on:ubuntu-latest
+  convert-and-push:
+    runs-on: ubuntu-latest
 
-    steps: 
-      -name:Checkout repo
-       uses: actions/checkout@v3
+    steps:
+      # 1️⃣ Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      -name: Say Hello
-        run: echo"GitHub Actions is running!"
+      # 2️⃣ Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
 
+      # 3️⃣ Install dependencies
+      - name: Install pandas
+        run: pip install pandas openpyxl
+
+      # 4️⃣ Run converter.py
+      - name: Run converter
+        run: python src/converter.py
+
+      # 5️⃣ Commit & push machineData.js
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Auto-update machineData.js"
+          branch: main
+          file_pattern: js/machineData.js
