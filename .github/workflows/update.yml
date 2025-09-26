@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-machine-data:
+  convert-and-commit:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repository
+      # 1️⃣ Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -27,11 +27,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl
 
-      # 4️⃣ Run your converter
+      # 4️⃣ Run converter.py
       - name: Run converter
         run: python src/converter.py
 
-      # 5️⃣ Commit and push the updated machineData.js
+      # 5️⃣ Commit & push machineData.js
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -40,6 +40,3 @@ jobs:
           file_pattern: js/machineData.js
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
-          commit_author: mzzgitthub <41898282+github-actions[bot]@users.noreply.github.com>
-          push_options: --force
-          repository: https://mzzgitthub:${{ secrets.GH_PAT }}@github.com/mzzgitthub/machine-tracker.git
