@@ -3,15 +3,15 @@ name: Update Machine Data
 on:
   push:
     branches:
-      - main       # triggers on every push to main
-  workflow_dispatch:  # allows manual trigger
+      - main
+  workflow_dispatch:
 
 jobs:
   update-machine-data:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repo
+      # 1️⃣ Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -27,16 +27,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl
 
-      # 4️⃣ Run converter.py
+      # 4️⃣ Run your converter
       - name: Run converter
         run: python src/converter.py
 
-      # 5️⃣ Commit & push machineData.js automatically
+      # 5️⃣ Commit and push the updated machineData.js
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}   # your PAT secret
         with:
           commit_message: "Auto-update machineData.js"
           branch: main
           file_pattern: js/machineData.js
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_author: mzzgitthub <41898282+github-actions[bot]@users.noreply.github.com>
+          push_options: --force
+          repository: https://mzzgitthub:${{ secrets.GH_PAT }}@github.com/mzzgitthub/machine-tracker.git
