@@ -38,5 +38,4 @@ jobs:
           commit_message: "Auto-update machineData.js"
           branch: main
           file_pattern: js/machineData.js
-        env:
           github_token: ${{ secrets.GH_PATH }}
